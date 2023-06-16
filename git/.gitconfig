@@ -1,0 +1,28 @@
+[user]
+  name = Murilo Messias de Camargo
+  email = murilo.messias@gmail.com
+[init]
+  defaultBranch = main
+[editor]
+  editor = nvim
+[alias]
+  a = !git add
+  aall = !git add .
+  br = !git branch -M
+  ca = !git commit --amend -m
+  car = !git commit --amend --reuse-message=HEAD
+  cf = !git clean -f -d
+  ch = !git checkout
+  cm = !git commit -m
+  d = !git diff
+  dm = !git branch --merged | grep -i -v -E "main"| xargs git branch -d
+  f = !git fetch
+  fo = !git fetch origin
+  l = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  pl = !git pull 
+  ps = !git push
+  r = !git restore
+  rs = !git restore -S
+  s = !git status -s
+[push]
+  default = current
